@@ -138,7 +138,7 @@ But how can we control this complexity?
 
 ### Part V - The Space between atoms: Up, and Over
 As you can see in the above pictures, there's this repeating triangular pattern.
-Skilled proponents of archaic automata call this pattern ether.
+Skilled proponents of archaic automata call this pattern *ether*.
 
 > TODO: expand on this.
 
@@ -153,7 +153,7 @@ to perform the computation we so desire.
 
 > TODO: elaborate.
 
-# Closing thoughts
+## Closing thoughts
 This is proving to be quite an adventure.
 If you'd like to reach out and contact me,
 you can find my contact details on my [website](https://www.slightknack.dev/home).
