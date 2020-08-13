@@ -2,12 +2,11 @@
 The other day, I ran across a generic code-bowling competition.
 For those who don't know what code-bowling is, it's essentially
 trying to write programs in a complex and obfuscated manner.
-The specifics of the contests are irrelevant -
-needless to say, having heard of rule-110-based Turing machines,
-I though the best route would be to implement one,
-then write a program that compiled some arbitrary simple language
-down to a rule 110 starting seed.
-(Rule 110 is a common form of 1d cellular automata, by the way.)
+
+The specifics of the contest are irrelevant.
+Having heard of rule-110-based Turing machines,
+I though the best route to victory would be to implement one,
+then write my contest submission in rule 110.
 
 Quite obviously, I quickly ran into some roadblocks.
 Although implementing rule 110 is quite trivial,
