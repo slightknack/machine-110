@@ -1,6 +1,7 @@
 # machine-110
-The other day, I ran across a generic competition
-to complete some simple in an as obfuscated manner possible.
+The other day, I ran across a generic code-bowling competition.
+For those who don't know what code-bowling is, it's essentially
+trying to write programs in a complex and obfuscated manner.
 The specifics of the contests are irrelevant -
 needless to say, having heard of rule-110-based Turing machines,
 I though the best route would be to implement one,
