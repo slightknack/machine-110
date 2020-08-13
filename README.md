@@ -87,7 +87,9 @@ To understand how rule 110 is Turing complete, we first need to understand
 Cyclic Tag Systems (CTS).
 A CTS is a simple machine that works as follows:
 
-There are a set of rules which are binary strings. For example:
+A CTS contains a set of rules, and some memory.
+These 'rules' are just binary strings:
+
 ```
 "0"
 "1010"
@@ -96,8 +98,7 @@ There are a set of rules which are binary strings. For example:
 "1100101"
 ```
 
-are all valid rules.
-These rules are ordered.
+A CTSs rules are also ordered.
 Additionally, CTSs have memory, which is also just a binary string.
 To evaluate a CTS, simply do the following:
 
@@ -121,8 +122,8 @@ or stable structures that cyclically change positions over time.
 
 Rule 110 has a quite a few gliders, the most important ones in this construction
 being the A4 glider, the Ē glider, and the C2 glider, as seen in the picture
-above, when read left-to-right. (Silly names, right? I'll call them A4 -> lazer,
-Ē -> wiggler, and C2 -> stacker from now on.)
+above, when read left-to-right. (Silly names, right? I'll call them A4 → lazer,
+Ē → wiggler, and C2 → stacker from now on.)
 
 When these gliders collide, new gliders emerge from the collision.
 Which gliders are produced is dependent on the spacing between the gliders.
@@ -130,7 +131,7 @@ Which gliders are produced is dependent on the spacing between the gliders.
 ![Rule 110 Collisions](https://upload.wikimedia.org/wikipedia/commons/1/18/Ca110-interaction2.png)
 
 For example, a lazer hitting a wiggler might create a stacker,
-as seen on the left, or may re-emit the lazer, as seen on the right.
+as seen on the right, or may re-emit the lazer, as seen on the left.
 By shooting lazers at wigglers and stackers, complex behaviour emerges.
 
 But how can we control this complexity?
