@@ -1,13 +1,16 @@
 use std::fmt::Debug;
+use crate::cyclic;
+
+const TRIM: bool = true;
 
 pub struct Tape {
-    iterations: usize,
-    left: isize,
-    right: isize,
-    tiling: Vec<bool>,
-    repeat: usize,
-    rule: u8,
-    cells: Vec<bool>,
+    pub iterations: usize,
+    pub left: isize,
+    pub right: isize,
+    pub tiling: Vec<bool>,
+    pub repeat: usize,
+    pub rule: u8,
+    pub cells: Vec<bool>,
 }
 
 impl Tape {
@@ -56,16 +59,34 @@ impl Tape {
         self.right += 1;
     }
 
+    // not perfect, just prevents some unnecessary growth
+    pub fn needs_tiling(&mut self) -> (bool, bool) {
+        let size = self.tiling.len();
+
+        if self.cells.len() <= size || !TRIM { return (true, true) }
+
+        let left_slice  = &self.cells[0..size];
+        let right_slice = &self.cells[self.cells.len()-size..self.cells.len()];
+
+        return (
+            left_slice  != self.tiling.as_slice(),
+            right_slice != self.tiling.as_slice(),
+        );
+    }
+
     pub fn tile(&mut self) {
         // only insert background tiling when applicable
         if self.iterations % self.repeat != 0 {
             return;
         }
-        println!("tiling!");
+
+        let (left, right) = self.needs_tiling();
+        if TRIM { println!("tiling | left: {} right: {}", left, right); }
+
         // a triangle of height n will have a width of 2n, hence:
         for _ in 0..(2 * self.repeat) {
-            self.tile_left();
-            self.tile_right();
+            if left  { self.tile_left();  }
+            if right { self.tile_right(); }
         }
     }
 
@@ -95,19 +116,26 @@ impl Debug for Tape {
     fn fmt(&self, f: &mut std::fmt::Formatter<'_>) -> std::fmt::Result {
         write!(
             f,
-            "{} {}\t{}|",
+            "{:#4} {:#4} {}\\",
             self.left,
             self.right,
             " ".repeat((self.iterations - 1) % self.repeat)
         )?;
-        
+
         for cell in self.cells.iter() {
             match cell {
                 false => write!(f, " ")?,
                 true  => write!(f, "█")?,
             }
         }
-        write!(f, "|")?;
+        write!(f, "/")?;
         Ok(())
+    }
+}
+
+impl cyclic::Compile for Tape {
+    /// converts a cyclic tag system into a rule 110 celluar automata
+    fn compile(i: cyclic::Cyclic) -> Tape {
+        todo!()
     }
 }
