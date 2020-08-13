@@ -11,7 +11,7 @@ pub fn wiggler() -> Vec<bool> {
 }
 
 // type C glider
-pub fn vertical() -> Vec<bool> {
+pub fn stacker() -> Vec<bool> {
     Tape::cells("111")
 }
 
