@@ -12,9 +12,9 @@ const ITER: usize = 200;
 
 fn main() {
     // build up a tape
-    let mut starting = vertical();
+    let mut starting = stacker();
     starting.append(&mut filler());
-    starting.append(&mut vertical());
+    starting.append(&mut stacker());
     starting.append(&mut filler());
     starting.append(&mut wiggler());
 
