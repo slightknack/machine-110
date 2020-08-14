@@ -5,8 +5,7 @@ Many people archaically implement such automata and *claim* it's Turing
 complete, but I've never really seen a project that takes it all the way¹
 and allows you to run arbitrary CTS programs in rule 110.
 
-This is my attempt at making it a
-
+This is my attempt at making that a reality.
 
 **1:** I mean there's [this](https://github.com/sky4walk/TuringMachine) Java implementation, but it's in German, apparently translated from *another* Haskell implementation (also in German), which was translated from *another* Mathematica version, which was... well, you get the point.
 
