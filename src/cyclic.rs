@@ -1,8 +1,8 @@
 use std::fmt::Debug;
 
 pub struct Cyclic {
-    state: Vec<bool>,
-    rules: Vec<Vec<bool>>,
+    pub state: Vec<bool>,
+    pub rules: Vec<Vec<bool>>,
 }
 
 impl Cyclic {

@@ -1,7 +1,7 @@
 use std::fmt::Debug;
 use crate::cyclic;
 
-const TRIM: bool = true;
+const TRIM: bool = false;
 
 pub struct Tape {
     pub iterations: usize,
