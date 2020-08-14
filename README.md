@@ -62,7 +62,7 @@ What's left? (that I know of):
 
 So yeah, quite a lot.
 
-## Wh are you doing this, masochist?
+## Why are you doing this, masochist?
 I really don't know.
 If you'd like to help, or just even offer moral support,
 that'd be much appreciated.
