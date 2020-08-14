@@ -1,5 +1,11 @@
 # Turing Machine Construction for Rule 110
-transliterated from ["Reproducing the cyclic tag system developed by Matthew Cook with Rule 110 using the phases fi_1"](http://www.comunidad.escom.ipn.mx/genaro/Papers/Papers_on_CA_files/repCTSR110.pdf)
+Transliterated from ["Reproducing the cyclic tag system developed by Matthew Cook with Rule 110 using the phases fi_1"](http://www.comunidad.escom.ipn.mx/genaro/Papers/Papers_on_CA_files/repCTSR110.pdf).
+If you're attempting to do something similar yourself:
+
+1. [Contact me](mailto:hello@slightknack.dev), I'd love to get in touch.
+2. Don't take my word for it - it's always better to read and work through
+   the original documents rather than relying on
+   what someone else randomly thoughtcrafted.
 
 ## Naming Conventions
 I found the names for individual gliders used in the paper quite cryptic and
