@@ -164,6 +164,8 @@ We need to figure out how to produce an initial starting state
 that contains a set of gliders that when run interact in complex ways
 to perform the computation we so desire.
 
+> NOTE: see `TURING.md` for now.
+
 > TODO: elaborate.
 
 ## Closing thoughts
