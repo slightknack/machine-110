@@ -1,4 +1,18 @@
 # machine-110
+Rule 110 is currently the only elementary cellular automata shown
+to be Turing complete.
+Many people archaically implement such automata and *claim* it's Turing
+complete, but I've never really seen a project that takes it all the way¹
+and allows you to run arbitrary CTS programs in rule 110.
+
+This is my attempt at making it a
+
+
+**1:** I mean there's [this](https://github.com/sky4walk/TuringMachine) Java implementation, but it's in German, apparently translated from *another* Haskell implementation (also in German), which was translated from *another* Mathematica version, which was... well, you get the point.
+
+Given that I'm not fluent in German, Google Translate has a hard time translating technical documentation and TEX, and it's turtles all the way down, I chose to take a different route and write my implementation from scratch.
+
+## How did this project come about?
 The other day, I ran across a generic code-bowling competition.
 For those who don't know what code-bowling is, it's essentially
 trying to write programs in a complex and obfuscated manner.
@@ -48,16 +62,16 @@ What's left? (that I know of):
 
 So yeah, quite a lot.
 
-## Why the heck are you doing this, masochist?
+## Wh are you doing this, masochist?
 I really don't know.
 If you'd like to help, or just even offer moral support,
 that'd be much appreciated.
 
-## Who the heck are you, anyway?
+## Who are you, anyway?
 Just a random high-school student with too much time on his hands and a
 penchant for doing things the hard way.
 
-## What are you even doing? This makes 0 sense, silly.
+## What are you doing again?
 I hope to explain some things about rule 110 and my understanding of
 what I've read so far. If you read closely, you'll see some serious holes
 in my understanding. If you just skim it, it might look pretty impressive.
